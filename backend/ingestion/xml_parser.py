@@ -93,7 +93,7 @@ def parse_osm(file_path):
 
 
 if __name__ == "__main__":
-    input_file = "../../data/raw/export.osm"
+    input_file = "../../data/raw/water.osm"
     output_file = "../../data/processed/water_data.xlsx"
 
     df = parse_osm(input_file)
