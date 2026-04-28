@@ -93,8 +93,7 @@ blore-infra-failure-cascade-detection/
 │   ├── test_complete.py       # Validation tests
 │   ├── test_upload.py         # Upload tests
 │   ├── ingestion/
-│   │   ├── xml_parser.py      # Core OSM parser
-│   │   └── kml_parser.py      # KML parser (placeholder)
+│   │   └── xml_parser.py      # Core OSM parser
 │   ├── graph/                 # Graph construction (placeholder)
 │   ├── simulation/            # Cascade failure simulation (placeholder)
 │   └── utils/                 # Utility functions
@@ -109,14 +108,12 @@ blore-infra-failure-cascade-detection/
 │       ├── App.css            # Styling
 │       ├── index.css          # Global styles
 │       ├── components/
-│       │   ├── UploadXML.jsx  # XML upload form
-│       │   ├── UploadKML.jsx  # KML upload form
-│       │   ├── MapView.jsx    # Map visualization
-│       │   ├── GraphView.jsx  # Graph visualization
-│       │   └── ControlPanel.jsx # Controls
-│       └── services/
-│           ├── xmlApi.js      # XML API client
-│           └── kmlApi.js      # KML API client
+       │   ├── UploadXML.jsx  # XML/OSM upload form
+       │   ├── MapView.jsx    # Map visualization
+       │   ├── GraphView.jsx  # Graph visualization
+       │   └── ControlPanel.jsx # Controls
+       └── services/
+           └── xmlApi.js      # XML API client
 ├── data/
 │   ├── raw/                   # Sample OSM files
 │   ├── processed/             # Output Excel/JSON
@@ -209,10 +206,9 @@ See `requirements.txt` for Python and `frontend/package.json` for Node.js depend
 ## 🚀 Next Steps
 
 1. **Test with your own OSM files** - Use data from OpenStreetMap export
-2. **Implement KML parser** - Uncomment in `backend/ingestion/kml_parser.py`
-3. **Build graph structure** - Add NetworkX in `backend/graph/`
-4. **Add simulation logic** - Implement cascade failure in `backend/simulation/`
-5. **Complete frontend visualizations** - Implement Leaflet map in React
+2. **Build graph structure** - Add NetworkX in `backend/graph/`
+3. **Add simulation logic** - Implement cascade failure in `backend/simulation/`
+4. **Complete frontend visualizations** - Implement Leaflet map in React
 
 ## 📞 Support
 

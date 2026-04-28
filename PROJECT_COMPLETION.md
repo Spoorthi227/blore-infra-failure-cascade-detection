@@ -16,15 +16,13 @@ Your **Blore Infrastructure Failure Cascade Detection** repository is now **comp
 
 ### 2. **Complete Frontend (React)** ✅
 **Components Created:**
-- `UploadXML.jsx` - XML file upload form
-- `UploadKML.jsx` - KML file upload form
+- `UploadXML.jsx` - XML/OSM file upload form
 - `MapView.jsx` - Map visualization placeholder
 - `GraphView.jsx` - Graph visualization placeholder
 - `ControlPanel.jsx` - Control panel with simulation buttons
 
 **Services & Config:**
-- `xmlApi.js` - Axios API client for XML operations
-- `kmlApi.js` - Axios API client for KML operations
+- `xmlApi.js` - Axios API client for XML/OSM operations
 - `package.json` - All React dependencies
 - `vite.config.js` - Build configuration with proxy setup
 - `App.jsx` - Main React component
@@ -36,8 +34,7 @@ backend/
 ├── app.py                    # Flask REST API (health, upload, parse, export)
 ├── xml_parser.py            # Interactive GUI with file dialog
 ├── ingestion/
-│   ├── xml_parser.py        # Core OSM parser
-│   └── kml_parser.py        # KML parser (stub)
+│   └── xml_parser.py        # Core OSM parser
 ├── graph/                   # Graph module (stub)
 ├── simulation/              # Simulation module (stub)
 ├── utils/                   # Utility functions
@@ -144,8 +141,7 @@ blore-infra-failure-cascade-detection/
 │   ├── test_upload.py       # Upload tests
 │   │
 │   ├── 📁 ingestion/
-│   │   ├── xml_parser.py    # Core parser (44 power + 53 water)
-│   │   └── kml_parser.py    # KML parser stub
+   │   └── xml_parser.py    # Core parser (44 power + 53 water)
 │   │
 │   ├── 📁 graph/            # Graph construction module
 │   ├── 📁 simulation/       # Cascade failure simulation module
@@ -166,14 +162,12 @@ blore-infra-failure-cascade-detection/
 │       │
 │       ├── 📁 components/
 │       │   ├── UploadXML.jsx
-│       │   ├── UploadKML.jsx
-│       │   ├── MapView.jsx
-│       │   ├── GraphView.jsx
-│       │   └── ControlPanel.jsx
-│       │
-│       └── 📁 services/
-│           ├── xmlApi.js
-│           └── kmlApi.js
+       │   ├── MapView.jsx
+       │   ├── GraphView.jsx
+       │   └── ControlPanel.jsx
+       │
+       └── 📁 services/
+           └── xmlApi.js
 │
 └── 📁 data/
     ├── 📁 raw/              # Sample OSM files
@@ -222,7 +216,7 @@ blore-infra-failure-cascade-detection/
 
 4. **Parse their own OSM files** - Works with any OpenStreetMap export
 
-5. **Extend the project** - Graph construction, simulation, KML support all ready to implement
+5. **Extend the project** - Graph construction and simulation ready to implement
 
 ---
 
@@ -266,7 +260,7 @@ blore-infra-failure-cascade-detection/
 📊 **Data Quality**: 0 missing values, automatic deduplication  
 🌐 **Web Interface**: Full React frontend ready  
 ⚙️ **API**: Flask REST API with CORS support  
-📱 **GUI**: Interactive desktop application with file dialog  
+📱 **GUI**: Interactive desktop application with file dialog
 🧪 **Tested**: Comprehensive test suite, all passing  
 📖 **Documented**: 4 detailed documentation files  
 

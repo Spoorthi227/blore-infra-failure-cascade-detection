@@ -92,17 +92,6 @@ def parse_xml():
         return jsonify({'error': 'Internal server error'}), 500
 
 
-@app.route('/api/parse/kml', methods=['POST'])
-def parse_kml():
-    """
-    KML parsing endpoint - NOT AVAILABLE
-    Use /api/upload for XML/OSM files instead
-    """
-    return jsonify({
-        'error': 'KML parsing not available. Use /api/upload for XML/OSM files.'
-    }), 400
-
-
 @app.route('/api/upload', methods=['POST'])
 def upload_file():
     """

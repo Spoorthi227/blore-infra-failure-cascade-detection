@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.css';
 import UploadXML from './components/UploadXML';
-import UploadKML from './components/UploadKML';
 import MapView from './components/MapView';
 import GraphView from './components/GraphView';
 import ControlPanel from './components/ControlPanel';
@@ -19,7 +18,6 @@ function App() {
       <main>
         <div className="upload-section">
           <UploadXML onSuccess={(data, type) => { setData(data); setFileType(type); }} />
-          <UploadKML onSuccess={(data, type) => { setData(data); setFileType(type); }} />
         </div>
         
         {data && (
