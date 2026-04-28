@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6">
+  <node id="1" lat="13.1939" lon="77.5941">
+    <tag k="power" v="substation"/>
+    <tag k="name" v="Main Power Station"/>
+    <tag k="operator" v="BESCOM"/>
+    <tag k="voltage" v="11000"/>
+    <tag k="frequency" v="50"/>
+    <tag k="rating" v="100"/>
+    <tag k="ref" v="PS-001"/>
+    <tag k="start_date" v="2020-01-15"/>
+    <tag k="substation" v="distribution"/>
+    <tag k="location" v="Downtown"/>
+  </node>
+  <node id="2" lat="13.1945" lon="77.5945">
+    <tag k="power" v="transformer"/>
+    <tag k="name" v="Transformer Unit 1"/>
+    <tag k="operator" v="BESCOM"/>
+    <tag k="voltage" v="440"/>
+    <tag k="frequency" v="50"/>
+    <tag k="rating" v="50"/>
+    <tag k="ref" v="TR-001"/>
+    <tag k="location" v="Sector 1"/>
+  </node>
+  <node id="3" lat="13.1950" lon="77.5950">
+    <tag k="power" v="tower"/>
+    <tag k="name" v="Transmission Tower"/>
+    <tag k="operator" v="BESCOM"/>
+    <tag k="voltage" v="66000"/>
+    <tag k="ref" v="TW-001"/>
+  </node>
+</osm>

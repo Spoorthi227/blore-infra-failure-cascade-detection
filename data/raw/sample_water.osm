@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6">
+  <node id="101" lat="13.1935" lon="77.5935">
+    <tag k="man_made" v="water_tank"/>
+    <tag k="name" v="Central Water Tank"/>
+    <tag k="operator" v="BWSSB"/>
+    <tag k="ref" v="WT-001,WT-002"/>
+    <tag k="landuse" v="water_supply"/>
+  </node>
+  <node id="102" lat="13.1940" lon="77.5940">
+    <tag k="landuse" v="reservoir"/>
+    <tag k="name" v="Supply Reservoir"/>
+    <tag k="operator" v="BWSSB"/>
+    <tag k="ref" v="RES-001"/>
+  </node>
+  <node id="103" lat="13.1950" lon="77.5950">
+    <tag k="man_made" v="water_works"/>
+    <tag k="name" v="Water Treatment Plant"/>
+    <tag k="operator" v="BWSSB"/>
+    <tag k="ref" v="WTP-001"/>
+  </node>
+</osm>
